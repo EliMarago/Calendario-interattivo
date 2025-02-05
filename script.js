@@ -93,4 +93,19 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   aggiornaCalendario();
+
+//Calcolo giorno corrente
+
+  function calcoloGiorni() {
+    const dataCorrente = new Date();
+    const formato = new Intl.DateTimeFormat("it-IT", {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    }).format(dataCorrente);
+    return formato;
+  }
+
+  const message = `Oggi è ${calcoloGiorni()}`;
+  calcolo.textContent = message;
 });
