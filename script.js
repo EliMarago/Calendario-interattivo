@@ -95,7 +95,6 @@ document.addEventListener("DOMContentLoaded", function () {
   aggiornaCalendario();
 
 //Calcolo giorno corrente
-
   function calcoloGiorni() {
     const dataCorrente = new Date();
     const formato = new Intl.DateTimeFormat("it-IT", {
